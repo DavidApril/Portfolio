@@ -1,0 +1,199 @@
+{
+  "main_layout": {
+    "metadata": {
+      "title": {
+        "template": "%s - David Agámez",
+        "default": "David Agámez - Estudiante de ingeniería de software y CEO"
+      },
+      "description": "Soy David, un estudiante de ingeniería de software y emprendedor con sede en Valledupar, Colombia. Soy el fundador y CEO de Community, donde desarrollamos tecnologías que empoderan a las personas para explorar la web en sus propios términos.",
+      "alternates": {
+        "types": {
+          "application/rss+xml": "${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml"
+        }
+      }
+    }
+  },
+  "home": {
+    "title": "David Agámez",
+    "role": "Desarrollador Frontend, Solucionador de problemas, Entusiasta. Coleccionando conocimiento.",
+    "description": "Soy David, un estudiante de ingeniería de software y emprendedor con sede en Valledupar, Colombia.",
+    "newsletter": {
+      "title": "Suscríbete",
+      "description": "Escribo sobre diseño de software, creación de empresas y la industria aeroespacial.",
+      "btn_label": "Únete",
+      "placeholder": "Dirección de correo electrónico"
+    },
+    "testimonials": {
+      "title": "Testimonios",
+      "description": "Lo que la gente dice sobre mí.",
+      "featuredTestimonial": {
+        "body": "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+        "author": {
+          "name": "Brenna Goyette",
+          "handle": "brennagoyette",
+          "imageUrl": "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
+          "logoUrl": "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg"
+        }
+      },
+      "getAllTestimonials": [
+        [
+          [
+            {
+              "body": "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+              "author": {
+                "name": "Leslie Alexander",
+                "handle": "lesliealexander",
+                "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              }
+            }
+          ]
+        ]
+      ]
+    },
+    "resumes": {
+      "title": "Experiencia laboral",
+      "download_label": "Descargar CV",
+      "getAllResumes": [
+        {
+          "company": "Community Software Solution",
+          "title": "CEO y Fundador",
+          "logo": "@/images/logos/planetaria.svg",
+          "start": "2019",
+          "end": {
+            "label": "Presente",
+            "dateTime": "2024"
+          }
+        },
+        {
+          "company": "DevZeros S.A.S",
+          "title": "Ingeniero de Software",
+          "logo": "@/images/logos/airbnb.svg",
+          "start": "Enero 2023",
+          "end": "Octubre 2024"
+        }
+      ]
+    }
+  },
+  "social": {
+    "email": "david404ac@gmail.com",
+    "github": "https://github.com/DavidApril",
+    "linkedin": "https://www.linkedin.com/in/david-agamez"
+  },
+  "about": {
+    "metadata": {
+      "title": "Acerca de David Agámez",
+      "description": "Soy David, un estudiante de ingeniería de software y emprendedor con sede en Valledupar, Colombia. Fundador de Community, donde empoderamos a las personas para explorar la web."
+    },
+    "title": "Soy David Agámez. Vivo en Valledupar, donde creo el futuro de las tecnologías web.",
+    "description": "Soy un ingeniero de software y emprendedor con sede en Valledupar, Colombia. Soy el fundador y CEO de Community, donde desarrollamos tecnologías que empoderan a las personas para explorar la web en sus propios términos. También soy estudiante de ingeniería de software en la Universidad de Valledupar, donde profundizo mi experiencia en desarrollo web y emprendimiento."
+  },
+  "articles": {
+    "metadata": {
+      "title": "Artículos",
+      "description": "Todos mis pensamientos en formato largo sobre diseño de software, liderazgo, creación de empresas y la industria aeroespacial."
+    },
+    "title": "Escribiendo sobre diseño de software, creación de empresas y la industria aeroespacial.",
+    "intro": "Todos mis pensamientos en formato largo sobre diseño de software, liderazgo, creación de empresas y la industria aeroespacial, recopilados en orden cronológico."
+  },
+  "projects": {
+    "metadata": {
+      "title": "Proyectos",
+      "description": "Cosas que he construido mientras dejo mi huella en el mundo."
+    },
+    "title": "Cosas que he construido mientras dejo mi huella en el mundo.",
+    "intro": "He trabajado en muchos proyectos a lo largo de los años, pero aquí están los que más me enorgullecen. Algunos de ellos son de código abierto, así que siéntete libre de revisar el código y contribuir si tienes ideas para mejorarlo.",
+    "getAllProjects": [
+      {
+        "status": "En progreso",
+        "name": "Biblioteca UI",
+        "description": "Una biblioteca UI personalizada que utilizo para construir todos mis proyectos.",
+        "link": {
+          "href": "https://github.com/DavidApril/Typezt",
+          "label": "typezt.com"
+        },
+        "logo": "@/images/logos/planetaria.svg"
+      },
+      {
+        "status": "En progreso",
+        "name": "Typezt",
+        "description": "Plataforma para mejorar habilidades de escritura con un enfoque en la diversión y la competencia.",
+        "link": {
+          "href": "https://github.com/DavidApril/Typezt",
+          "label": "typezt.com"
+        },
+        "logo": "@/images/logos/planetaria.svg"
+      },
+      {
+        "status": "En progreso",
+        "name": "Alerón Producciones",
+        "description": "Construyendo una plataforma que empodera a los creadores audiovisuales con herramientas de producción de vanguardia.",
+        "link": {
+          "href": "http://aleronproducciones.com",
+          "label": "aleronproducciones.com"
+        },
+        "logo": "@/images/logos/planetaria.svg"
+      }
+    ]
+  },
+  "speaking": {
+    "metadata": {
+      "title": "Conferencias",
+      "description": "He hablado en eventos alrededor del mundo y he sido entrevistado en muchos podcasts."
+    },
+    "title": "He hablado en eventos alrededor del mundo y he sido entrevistado en podcasts.",
+    "intro": "Una de mis formas favoritas de compartir mis ideas es en vivo en el escenario, donde hay mucho más ancho de banda de comunicación que en la escritura. Las entrevistas en podcasts son otra forma en la que me gusta participar en conversaciones y proporcionar ideas.",
+    "sections": [
+      {
+        "title": "Conferencias",
+        "appearances": [
+          {
+            "title": "Empoderando la exploración web con Community",
+            "description": "Un análisis detallado de cómo Community está cambiando la forma en que las personas interactúan con la web.",
+            "event": "TechConf 2023",
+            "cta": "Ver video",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "Podcasts",
+        "appearances": [
+          {
+            "title": "Construyendo una empresa con un enfoque centrado en las personas",
+            "description": "Hablando sobre cómo Community empodera a los usuarios y crece con un enfoque basado en la misión.",
+            "event": "Indie Hackers, Julio 2023",
+            "cta": "Escuchar podcast",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "uses": {
+    "metadata": {
+      "title": "Herramientas",
+      "description": "Herramientas que utilizo para realizar mi trabajo como ingeniero de software y emprendedor."
+    },
+    "title": "Lo que utilizo para hacer mi trabajo.",
+    "intro": "Soy un ingeniero de software y emprendedor con sede en Valledupar, Colombia. Soy el fundador y CEO de Community, donde desarrollamos tecnologías que empoderan a las personas para explorar la web.",
+    "sections": [
+      {
+        "title": "Desarrollo",
+        "items": [
+          {
+            "title": "IDLE",
+            "description": "Suite de JetBrains & Visual Studio Code"
+          },
+          {
+            "title": "Control de versión",
+            "description": "Github, Gitlab & Bitbucket"
+          },
+          {
+            "title": "Editor",
+            "description": "Neovim"
+          }
+        ]
+      }
+    ]
+  }
+}
