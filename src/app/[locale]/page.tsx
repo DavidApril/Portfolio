@@ -4,12 +4,13 @@ import Image, { type ImageProps } from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
+import { Button } from '@/components/button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import { formatDate } from '@/lib/formatDate'
 import { home, ROUTES, social } from '@/config'
+import { getTranslations } from 'next-intl/server'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 
 import AleronProduccionesLogo from '@/images/photos/Logo_Alerón-01.png'
@@ -191,7 +192,7 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="#" className="group mt-6 w-full">
         {home.resumes.download_label}
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -228,10 +229,10 @@ function Photos() {
 
 function Stats() {
   const stats = [
-    { id: 1, name: 'Creators on the platform', value: '8,000+' },
-    { id: 2, name: 'Flat platform fee', value: '3%' },
-    { id: 3, name: 'Uptime guarantee', value: '99.9%' },
-    { id: 4, name: 'Paid out to creators', value: '$70M' },
+    { id: 1, name: 'Projects', value: '3' },
+    { id: 2, name: 'Clients', value: '1' },
+    { id: 3, name: 'Year', value: '1' },
+    { id: 4, name: 'Experience', value: '2' },
   ]
 
   return (
@@ -398,18 +399,19 @@ function Testimonials() {
   )
 }
 
-export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+async function Home() {
+  const articles = (await getAllArticles()).slice(0, 4)
+  const t = await getTranslations('home')
 
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            {home.role}
+            {t('title')}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            {home.description}
+            {t('description')}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -445,3 +447,5 @@ export default async function Home() {
     </>
   )
 }
+
+export default Home
