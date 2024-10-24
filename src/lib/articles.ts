@@ -1,5 +1,5 @@
 import glob from 'fast-glob'
-
+import React from 'react'
 interface Article {
   title: string
   description: string
@@ -14,7 +14,7 @@ export interface ArticleWithSlug extends Article {
 async function importArticle(
   articleFilename: string,
 ): Promise<ArticleWithSlug> {
-  let { article } = (await import(`../app/articles/${articleFilename}`)) as {
+  let { article } = (await import(`../app/[locale]/articles/${articleFilename}`)) as {
     default: React.ComponentType
     article: Article
   }
@@ -27,7 +27,7 @@ async function importArticle(
 
 export async function getAllArticles() {
   let articleFilenames = await glob('*/page.mdx', {
-    cwd: './src/app/articles',
+    cwd: './src/app/[locale]/articles',
   })
 
   let articles = await Promise.all(articleFilenames.map(importArticle))
