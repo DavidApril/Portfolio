@@ -20,9 +20,9 @@ const data = {
 
   home: {
     title: 'David Agámez',
-    role: 'Software Engineering Student & CEO of Community',
+    role: 'Front end developer, Troubleshooter, Enthusiast. Collecting knowledge.',
     description:
-      'I’m David, a software engineering student and entrepreneur based in Valledupar, Colombia. I lead Community, where we empower individuals through web technologies.',
+      'I’m David, a software engineering student and entrepreneur based in Valledupar, Colombia.',
     newsletter: {
       title: 'Subscribe',
       description:
@@ -32,6 +32,8 @@ const data = {
     },
 
     testimonials: {
+      title: 'Testimonials',
+      description: 'What people are saying about me.',
       featuredTestimonial: {
         body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
         author: {
@@ -129,6 +131,17 @@ const data = {
       'I’ve worked on many projects over the years, but here are the ones I’m most proud of. Some of them are open-source, so feel free to check out the code and contribute if you have ideas for improvement.',
 
     getAllProjects: () => [
+      {
+        status: 'In progress',
+        name: 'UI Library',
+        description:
+          'A custom UI library that I use to build all of my projects.',
+        link: {
+          href: 'https://github.com/DavidApril/Typezt',
+          label: 'typezt.com',
+        },
+        logo: logoCommunity,
+      },
       {
         status: 'In progress',
         name: 'Typezt',
